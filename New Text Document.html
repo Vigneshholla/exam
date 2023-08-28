@@ -17,6 +17,28 @@ num2=Number(document.getElementById("Num2").value);
 sum=num1-num2;
 document.getElementById("Result").value=sum;
 }
+function mul()
+{
+var num1,num2,sum;
+num1=Number(document.getElementById("Num1").value);
+num2=Number(document.getElementById("Num2").value);
+sum=num1*num2;
+document.getElementById("Result").value=sum;
+}
+function div()
+{
+var num1,num2,sum;
+num1=Number(document.getElementById("Num1").value);
+num2=Number(document.getElementById("Num2").value);
+sum=num1/num2;
+document.getElementById("Result").value=sum;
+}
+function reset()
+{
+document.getElementById("Num1").value=" ";
+document.getElementById("Num2").value=" ";
+document.getElementById("Result").value="";
+}
 </script>
 </head>
 <body>
@@ -31,7 +53,9 @@ document.getElementById("Result").value=sum;
 
 <input type="button" onclick="add()" value="+"/>
 <button onclick="sub()" >-</button>
-
+<button onclick="mul()" >*</button>
+<button onclick="div()" >/</button>
+<button onclick="reset()" >C</button><br/></br>
 <label for="Result"> Result:</label>
 <input id="Result" ><br/></br>
 
